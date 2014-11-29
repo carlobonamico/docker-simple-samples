@@ -1,0 +1,5 @@
+FROM tomcat:7
+MAINTAINER carlobonamico
+
+RUN /bin/ls webapps/ROOT/
+CMD ["catalina.sh","run"]
