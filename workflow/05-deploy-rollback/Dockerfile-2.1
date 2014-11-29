@@ -1,0 +1,6 @@
+FROM tomcat:7
+MAINTAINER carlobonamico
+ADD index.jsp /home/tomcat/webapps/ROOT/index.jsp
+
+RUN /bin/ls /home/tomcat/webapps/ROOT/
+CMD ["catalina.sh","run"]
